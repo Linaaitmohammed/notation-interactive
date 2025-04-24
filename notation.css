@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fond noir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #000000; /* Fond noir */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Ombre légère blanche */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color: #ffffff; /* Texte blanc */
+    position: relative; /* Pour positionner l'étoile */
+}
+
+.star-icon {
+    position: absolute; /* Position absolue pour la placer en haut à gauche */
+    top: 20px; /* Distance depuis le haut */
+    left: 20px; /* Distance depuis la gauche */
+}
+
+.star-icon svg {
+    width: 40px; /* Taille de l'étoile */
+    height: 40px;
+}
+
+h1 {
+    font-size: 18px;
+    color: #ffffff; /* Texte blanc */
+    margin-bottom:8px;
+    text-align: left;
+}
+
+p {
+    font-size: 14px;
+    color: #cccccc; /* Texte gris clair */
+    margin-bottom: 20px;
+}
+
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.number {
+    font-size: 18px;
+    color: #ffffff; /* Texte blanc */
+    background-color: #333333; /* Fond gris foncé */
+    padding: 10px 15px;
+    border-radius: 50%; /* Forme ronde */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.number:hover {
+    background-color: #ffcc00; /* Jaune au survol */
+    color: #000000; /* Texte noir */
+}
+
+button {
+    background-color: #ff6600; /* Orange pour le bouton */
+    color: #ffffff; /* Texte blanc */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px; /* Bouton arrondi */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc5200; /* Orange foncé au survol */
+}
+
+.signature {
+    font-size: 12px;
+    color: #999999; /* Texte gris clair */
+    margin-top: 20px;
+}
+
+.number.selected {
+    background-color: #ffcc00; /* Jaune pour la sélection */
+    color: #000000; /* Texte noir */
+}
+
+.hidden {
+    display: none; /* Masque les éléments */
+}
+
+.thank-you-section {
+    text-align: center;
+}
+
+.thank-you-section h1 {
+    font-size: 24px;
+    color: #ffffff; /* Texte blanc */
+    margin-bottom: 10px;
+}
+
+.thank-you-section p {
+    font-size: 14px;
+    color: #cccccc; /* Texte gris clair */
+    margin-bottom: 20px;
+}
+.thank-you-section .resultat {
+    margin: 30px;
+    font-size: small;
+    color: hsl(25, 97%, 45%);
+    border-radius: 100px;
+    background: hsl(213, 19%, 23%);
+    padding: 10px;
+    width: 70%;
+    justify-content: center;
+}
